@@ -1,7 +1,7 @@
 FROM php:7.2-apache-stretch
 
 ENV BOOKSTACK=BookStack \
-    BOOKSTACK_VERSION=0.27.5 \
+    BOOKSTACK_VERSION=0.28.2 \
     BOOKSTACK_HOME="/var/www/bookstack"
 
 RUN apt-get update && apt-get install -y --no-install-recommends git zlib1g-dev libfreetype6-dev libjpeg62-turbo-dev libmcrypt-dev libpng-dev wget libldap2-dev libtidy-dev libxml2-dev fontconfig ttf-freefont wkhtmltopdf tar curl \
@@ -40,8 +40,8 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.docker.dockerfile="/Dockerfile" \
       org.label-schema.license="MIT" \
       org.label-schema.name="bookstack" \
-      org.label-schema.vendor="solidnerd" \
+      org.label-schema.vendor="bandresen" \
       org.label-schema.url="https://github.com/solidnerd/docker-bookstack/" \
       org.label-schema.vcs-ref=$VCS_REF \
-      org.label-schema.vcs-url="https://github.com/solidnerd/docker-bookstack.git" \
+      org.label-schema.vcs-url="https://github.com/bandresen/docker-bookstack.git" \
       org.label-schema.vcs-type="Git"
